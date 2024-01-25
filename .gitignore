@@ -11,5 +11,7 @@
 # Unignore Makefile
 !Makefile
 
-_build
+_build/
+
+*.o
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- vim: ts=2 sw=2 expandtab
+-->
+
+<interface>
+  <object class="GtkColumnView" id="column_view">
+    <property name="single-click-activate">false</property>
+    <property name="vexpand">true</property>
+    <property name="hexpand">true</property>
+    <child>
+      <object class="GtkColumnViewColumn" id="column1">
+        <property name="title">My First Column</property>
+        <property name="factory">
+          <object class="GtkBuilderListItemFactory">
+            <property name="bytes"><![CDATA[
+            <?xml version="1.0" encoding="UTF-8"?>
+            <interface>
+              <template class="GtkListItem">
+                <property name="child">
+                  <object class="GtkLabel">
+                    <binding name="label">
+                      <lookup name="str1" type="DemoStringTuple">
+                        <lookup name="item">GtkListItem</lookup>
+                      </lookup>
+                    </binding>
+                  </object>
+                </property>
+              </template>
+            </interface>
+              ]]></property>
+          </object>
+        </property>
+      </object>
+    </child>
+    <child>
+      <object class="GtkColumnViewColumn" id="column2">
+        <property name="title" translatable="yes">My Second Column</property>
+        <property name="factory">
+          <object class="GtkBuilderListItemFactory">
+            <property name="bytes"><![CDATA[
+            <?xml version="1.0" encoding="UTF-8"?>
+            <interface>
+              <template class="GtkListItem">
+                <property name="child">
+                  <object class="GtkLabel">
+                    <binding name="label">
+                      <lookup name="str2" type="DemoStringTuple">
+                        <lookup name="item">GtkListItem</lookup>
+                      </lookup>
+                    </binding>
+                  </object>
+                </property>
+              </template>
+            </interface>
+              ]]></property>
+          </object>
+        </property>
+      </object>
+    </child>
+  </object>
+</interface>

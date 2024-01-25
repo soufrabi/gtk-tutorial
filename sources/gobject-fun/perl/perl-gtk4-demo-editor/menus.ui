@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <menu id="menubar">
+    <submenu>
+    <attribute name="label" translatable="yes">_Application</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_New</attribute>
+          <attribute name="action">app.new</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Open</attribute>
+          <attribute name="action">app.open</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">_Save</attribute>
+          <attribute name="action">app.save</attribute>
+        </item>
+        <item>
+          <attribute name="label" translatable="yes">Save _As...</attribute>
+          <attribute name="action">app.save-as</attribute>
+        </item>
+      </section>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Quit</attribute>
+          <attribute name="action">app.quit</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">_File</attribute>
+      <section>
+        <item>
+          <attribute name="label" translatable="yes">_Prefer Dark Theme</attribute>
+          <attribute name="action">app.dark</attribute>
+        </item>
+        <submenu>
+          <attribute name="label" translatable="yes">_Color</attribute>
+          <section>
+            <item>
+              <attribute name="label" translatable="yes">_Red</attribute>
+              <attribute name="action">app.color</attribute>
+              <attribute name="target">red</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Green</attribute>
+              <attribute name="action">app.color</attribute>
+              <attribute name="target">green</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Blue</attribute>
+              <attribute name="action">app.color</attribute>
+              <attribute name="target">blue</attribute>
+            </item>
+          </section>
+        </submenu>
+        <submenu>
+          <attribute name="label" translatable="yes">_Shape</attribute>
+          <section>
+            <item>
+              <attribute name="label" translatable="yes">_Square</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">square</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Rectangle</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">rectangle</attribute>
+            </item>
+            <item>
+              <attribute name="label" translatable="yes">_Oval</attribute>
+              <attribute name="action">win.shape</attribute>
+              <attribute name="target">oval</attribute>
+            </item>
+          </section>
+        </submenu>
+        <item>
+          <attribute name="label" translatable="yes">_Bold</attribute>
+          <attribute name="action">win.bold</attribute>
+        </item>
+      </section>
+    </submenu>
+    <submenu>
+      <attribute name="label" translatable="yes">_Help</attribute>
+      <item>
+        <attribute name="label" translatable="yes">_About</attribute>
+        <attribute name="action">win.about</attribute>
+      </item>
+    </submenu>
+  </menu>
+</interface>
